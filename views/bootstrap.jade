@@ -1,0 +1,18 @@
+extends layout
+
+append head
+  link(href="/css/bootstrap.css", rel="stylesheet")
+  link(href="/css/bootstrap-responsive.css", rel="stylesheet")
+block body
+  .navbar.navbar-inverse.navbar-static-top
+    .navbar-inner
+      .container
+        a.brand(href="/") Preziew
+        span.vote
+          iframe(src="http://nodeknockout.com/iframe/coffeebreak", frameborder="0", scrolling="no", allowtransparency="true", width="115", height="25")
+        block navbar
+
+  #main-container
+    .container
+      block content
+

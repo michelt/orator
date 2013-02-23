@@ -1,0 +1,12 @@
+link(rel="stylesheet", href="/css/reveal/reveal.css")
+link(rel="stylesheet", href="/css/reveal/theme/default.css")
+.reveal
+  .slides
+    each slide_h in presentation.slides_h
+      if slide_h.slides_v.length > 1
+        section
+          each slide_v in slide_h.slides_v
+            != slide_v.data
+      else
+        each slide_v in slide_h.slides_v
+          != slide_v.data

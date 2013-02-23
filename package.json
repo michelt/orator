@@ -1,0 +1,41 @@
+{
+  "name": "orator",
+  "version": "0.1.0",
+  "description": "Host and synchronize your Reveal.js presentations across several devices",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start-watch": "DEBUG='* -connect:dispatcher -send -express:router' node_modules/.bin/node-dev app.coffee",
+    "grunt": "./node_modules/.bin/grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:JSFrogs/orator.git"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "jade": "~0.27.7",
+    "coffee-script": "*",
+    "socket.io": "0.9.x",
+    "mongoose": "<3.4.0",
+    "debug": "~0.7.0",
+    "underscore.string": "~2.3.0"
+  },
+  "devDependencies": {
+    "node-dev": "~0.2.8",
+    "grunt-clean": "~0.3.0",
+    "grunt-contrib-copy": "~0.3.2",
+    "grunt-contrib-coffee": "~0.3.2",
+    "grunt-contrib-watch": "~0.1.4",
+    "grunt": "~0.3.17"
+  },
+  "author": "JS Frogs",
+  "contributors": [
+    "Mathieu Ghennassia (@G_Math)",
+    "Michel Thiers (@michelthiers)",
+    "Paul Le Cam (@paul_lecam)"
+  ]
+}

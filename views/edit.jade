@@ -1,0 +1,19 @@
+extends bootstrap
+
+append head
+  link(href="/css/edit.css", rel="stylesheet")
+
+append navbar
+  a#add-question.btn.btn-preziew.pull-right( href = "#")
+    | Add a question here
+  a.btn.pull-right( href = "/#{presentation.slug}/show", target="_blank" )
+    | Audience Mode
+  a.btn.pull-right( href = "/#{presentation.slug}/start", target="_blank" )
+    | Speaker Mode
+
+
+block content
+  include includes/slides
+
+append scripts
+  script#app(type="text/javascript", src="/pages/edit.js", "data-presentation"=presentation_data)

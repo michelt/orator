@@ -1,0 +1,13 @@
+#main-container .reveal .slides { top: 60%; }
+input, textarea { width: 98%; opacity: 0.6; margin: 0 auto 40px auto; }
+label, a { font-weight: bold; }
+#answers-form { margin-left: 0; }
+#answers-form li { display: block; }
+.add-answer { padding: 6px 10px; border: 1px solid #7C4F96; border-radius: 4px; color: #7C4F96; font-size: 0.9em; background-color: rgba(255, 255, 255, 0.4) }
+.add-answer:hover { color: #7C4F96; }
+.modal { background: transparent none; }
+.modal-header { border-radius: 6px 6px 0 0; }
+.modal-header, .modal-footer { background: transparent url('/img/pattern_medium.jpg'); }
+.modal-body { background: transparent url('/img/pattern_light.jpg'); }
+h3 { color: #fff; }
+.modal-footer .btn + .btn { margin-right: 5px; }

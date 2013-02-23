@@ -1,0 +1,10 @@
+body { background-image: url('/img/pattern_lighter.jpg'); }
+
+form { width: 60%; margin: 0 auto; }
+fieldset { width: 100%; padding: 20px; border-radius: 10px 10px 0 0; background: transparent url('/img/pattern_light.jpg'); }
+#slides-input input, textarea { width: 98%; opacity: 0.6; margin: 0 auto 40px auto; }
+label { margin: 0 0 15px 0; font-size: 1.5em; font-weight: bold; text-shadow: 2px 2px 4px #999; }
+.help-block { margin-left: 20px; }
+.help-block i { margin-right: 10px; }
+.help-block  a { font-weight: bold; }
+.form-actions { margin-top: 0; width: 100%; border-top: none; border-radius: 0 0 10px 10px; background: transparent url('/img/pattern_medium.jpg'); text-align: center; }

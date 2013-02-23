@@ -1,0 +1,8 @@
+extends bootstrap
+
+block body
+  include includes/slides
+  #answers-results.hide
+
+append scripts
+  script#app(type="text/javascript", src="/pages/start.js", "data-presentation"=presentation_data)

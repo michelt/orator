@@ -1,0 +1,20 @@
+extends bootstrap
+
+append head
+  link(href="/css/home.css", rel="stylesheet")
+
+block body
+  header
+    span.vote
+      iframe(src="http://nodeknockout.com/iframe/coffeebreak", frameborder="0", scrolling="no", allowtransparency="true", width="115", height="25")
+  #home
+    h1= title
+    p.lead
+      | Makes your <a href="http://rvl.io" target="_blank">Reveal.js</a> presentations live and interactive
+    nav
+      a.button(href="/create") Start a new presentation
+    #how-it-works
+      a.btn.important How it works
+
+append scripts
+  script#app(type="text/javascript", src="/pages/home.js", "data-slug"=last_presentation)

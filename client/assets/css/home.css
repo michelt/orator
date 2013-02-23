@@ -1,0 +1,19 @@
+body { background-image: url('/img/pattern_medium.jpg'); overflow: auto !important; }
+header>span.vote {float:right; margin-right:-10px}
+h1 { padding-top: 80px; text-align: center; font-size: 8em; line-height: 1.5; color: #d5d5d5; text-shadow: 2px 2px 4px #999;}
+p.lead { text-align: center; font-size: 2em; }
+nav { margin-top: 40px; text-align: center; }
+a.button { font-size: 1.5em; padding: 10px 20px;}
+a.important { display: block; width: 150px; margin: 50px auto; background: rgba(255, 255, 255, 0.3); font-weight: bold; text-shadow: none; }
+a.important:hover{ background: rgba(255, 255, 255, 0.6); }
+#how-it-works.help {
+  width: 60%;
+  margin: 50px auto;
+  background:
+  rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+}
+#how-it-works.help ol li { line-height: 2; font-weight: bold; }
+#how-it-works.help p { font-weight: bold; }
+#how-it-works.help .sample-buttons { text-align: center; }

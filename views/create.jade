@@ -1,0 +1,36 @@
+extends bootstrap
+
+append head
+  link(href="/css/create.css", rel="stylesheet")
+
+block content
+  form#slides-input
+    fieldset
+      label(for="title") Title
+      input#title.slug(type="text", placeholder="Your presentation title", tabindex="1")
+
+      label(for="password") Password
+      input#password.slug(type="text", placeholder="Your password", tabindex="2")
+
+      label(for="slides") Slides
+      span.help-block
+        i.icon-hand-right
+        |Import html source of your presentation <a href="http://lab.hakim.se/reveal-js/" target="_blank">Reveal.js</a>
+      span.help-block
+        i.icon-hand-right
+        |You can use <a href="http://rvl.io" target="_blank">rvl.io</a> to create your presentation easily
+      textarea#slides(rows="15", tabindex="3")
+        |<div class="slides">
+        |   <section>
+        |     <h1> 1st slide title...</h1>
+        |   </section>
+        |   <section>
+        |     <h1> 2nd slide title...</h1>
+        |   </section>
+        |   ...
+        |</div>
+    .form-actions
+      button.button(type="submit", tabindex="4") Submit
+
+append scripts
+  script(type="text/javascript", src="/pages/create.js")
